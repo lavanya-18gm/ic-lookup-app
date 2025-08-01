@@ -1,0 +1,158 @@
+{
+    "LM358": {
+        "name": "LM358 Dual Operational Amplifier",
+        "function": "Op-Amp",
+        "pins": 8,
+        "features": [
+            "Dual independent op-amps",
+            "Low power consumption",
+            "Wide power supply range"
+        ],
+        "applications": [
+            "Sensor signal amplification",
+            "Active filters",
+            "Voltage followers"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
+    },
+    "NE555": {
+        "name": "NE555 Timer IC",
+        "function": "Timer/Multivibrator",
+        "pins": 8,
+        "features": [
+            "Astable and monostable operation",
+            "Timing from microseconds to hours",
+            "High output current"
+        ],
+        "applications": [
+            "Timer circuits",
+            "Pulse generation",
+            "Oscillators"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/ne555.pdf"
+    },
+    "CD4017": {
+        "name": "CD4017 Decade Counter",
+        "function": "Counter/Divider",
+        "pins": 16,
+        "features": [
+            "Divide-by-10 counter",
+            "10 decoded outputs",
+            "Wide supply voltage range"
+        ],
+        "applications": [
+            "LED chasers",
+            "Frequency counters",
+            "Digital clocks"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf"
+    },
+    "IC7400": {
+        "name": "IC 7400 Quad 2-Input NAND Gate",
+        "function": "NAND Gate",
+        "pins": 14,
+        "features": [
+            "Four NAND gates",
+            "TTL compatible",
+            "Fast switching"
+        ],
+        "applications": [
+            "Logic building blocks",
+            "Digital systems",
+            "Combinational logic"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls00.pdf"
+    },
+    "IC7402": {
+        "name": "IC 7402 Quad 2-Input NOR Gate",
+        "function": "NOR Gate",
+        "pins": 14,
+        "features": [
+            "Four NOR gates",
+            "TTL compatible",
+            "High noise immunity"
+        ],
+        "applications": [
+            "Logic operations",
+            "Digital circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls02.pdf"
+    },
+    "IC7404": {
+        "name": "IC 7404 Hex Inverter",
+        "function": "NOT Gate",
+        "pins": 14,
+        "features": [
+            "Six independent inverters",
+            "TTL compatible",
+            "High speed"
+        ],
+        "applications": [
+            "Signal inversion",
+            "Digital logic",
+            "Pulse shaping"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls04.pdf"
+    },
+    "IC7408": {
+        "name": "IC 7408 Quad 2-Input AND Gate",
+        "function": "AND Gate",
+        "pins": 14,
+        "features": [
+            "Four AND gates",
+            "TTL compatible",
+            "High fan-out"
+        ],
+        "applications": [
+            "Logic design",
+            "Arithmetic circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls08.pdf"
+    },
+    "IC7432": {
+        "name": "IC 7432 Quad 2-Input OR Gate",
+        "function": "OR Gate",
+        "pins": 14,
+        "features": [
+            "Four OR gates",
+            "TTL compatible",
+            "Fast switching"
+        ],
+        "applications": [
+            "Digital logic",
+            "Control logic"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls32.pdf"
+    },
+    "IC7486": {
+        "name": "IC 7486 Quad 2-Input XOR Gate",
+        "function": "XOR Gate",
+        "pins": 14,
+        "features": [
+            "Four XOR gates",
+            "TTL logic",
+            "Medium speed"
+        ],
+        "applications": [
+            "Parity checkers",
+            "Adders",
+            "Data comparison"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls86.pdf"
+    },
+    "IC74266": {
+        "name": "IC 74266 Quad 2-Input XNOR Gate",
+        "function": "XNOR Gate",
+        "pins": 14,
+        "features": [
+            "Four XNOR gates",
+            "TTL compatible",
+            "Balanced propagation delay"
+        ],
+        "applications": [
+            "Equality detectors",
+            "Comparator circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls266.pdf"
+    }
+}

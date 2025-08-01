@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Layout Loaded</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        h1 {
+            color: #0077cc;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        .result-box {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 IC Name & Feature Lookup</h1>
+
+    <form method="POST">
+        <input type="text" name="ic_code" placeholder="Enter IC code (e.g., IC7408)" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if result %}
+        <div class="result-box">
+            <h2>{{ result.name }}</h2>
+            <p><strong>Function:</strong> {{ result.function }}</p>
+            <p><strong>Pins:</strong> {{ result.pins }}</p>
+
+            <p><strong>Features:</strong></p>
+            <ul>
+                {% for feat in result.features %}
+                    <li>{{ feat }}</li>
+                {% endfor %}
+            </ul>
+
+            <p><strong>Applications:</strong> {{ result.applications | join(', ') }}</p>
+            <p><a href="{{ result.datasheet }}" target="_blank">📄 View Datasheet</a></p>
+        </div>
+    {% elif request.method == 'POST' %}
+        <p class="error"> No data found for that IC code.</p>
+    {% endif %}
+</body>
+</html>
