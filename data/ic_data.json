@@ -1,16 +1,111 @@
 {
-    "LM358": {
-        "name": "LM358 Dual Op-Amp",
-        "function": "Operational Amplifier",
-        "pins": 8,
+
+    "IC7400": {
+        "name": "IC 7400 Quad 2-Input NAND Gate",
+        "function": "NAND Gate",
+        "pins": 14,
         "features": [
-            "Low power consumption",
-            "Wide voltage range",
-            "Dual amplifier"
+            "Four NAND gates",
+            "TTL compatible",
+            "Fast switching"
         ],
         "applications": [
-            "Audio processing",
-            "Sensor signal conditioning"
+            "Logic building blocks",
+            "Digital systems",
+            "Combinational logic"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls00.pdf"
+    },
+    "IC7402": {
+        "name": "IC 7402 Quad 2-Input NOR Gate",
+        "function": "NOR Gate",
+        "pins": 14,
+        "features": [
+            "Four NOR gates",
+            "TTL compatible",
+            "High noise immunity"
+        ],
+        "applications": [
+            "Logic operations",
+            "Digital circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls02.pdf"
+    },
+    "IC7404": {
+        "name": "IC 7404 Hex Inverter",
+        "function": "NOT Gate",
+        "pins": 14,
+        "features": [
+            "Six independent inverters",
+            "TTL compatible",
+            "High speed"
+        ],
+        "applications": [
+            "Signal inversion",
+            "Digital logic",
+            "Pulse shaping"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls04.pdf"
+    },
+    "IC7408": {
+        "name": "IC 7408 Quad 2-Input AND Gate",
+        "function": "AND Gate",
+        "pins": 14,
+        "features": [
+            "Four AND gates",
+            "TTL compatible",
+            "High fan-out"
+        ],
+        "applications": [
+            "Logic design",
+            "Arithmetic circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls08.pdf"
+    },
+    "IC7432": {
+        "name": "IC 7432 Quad 2-Input OR Gate",
+        "function": "OR Gate",
+        "pins": 14,
+        "features": [
+            "Four OR gates",
+            "TTL compatible",
+            "Fast switching"
+        ],
+        "applications": [
+            "Digital logic",
+            "Control logic"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls32.pdf"
+    },
+    "IC7486": {
+        "name": "IC 7486 Quad 2-Input XOR Gate",
+        "function": "XOR Gate",
+        "pins": 14,
+        "features": [
+            "Four XOR gates",
+            "TTL logic",
+            "Medium speed"
+        ],
+        "applications": [
+            "Parity checkers",
+            "Adders",
+            "Data comparison"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls86.pdf"
+    },
+    "LM358": {
+        "name": "LM358 Dual Operational Amplifier",
+        "function": "Op-Amp",
+        "pins": 8,
+        "features": [
+            "Dual independent op-amps",
+            "Low power consumption",
+            "Wide power supply range"
+        ],
+        "applications": [
+            "Sensor signal amplification",
+            "Active filters",
+            "Voltage followers"
         ],
         "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
     },
@@ -19,737 +114,1086 @@
         "function": "Timer/Multivibrator",
         "pins": 8,
         "features": [
-            "Astable and monostable modes",
-            "Adjustable duty cycle",
-            "Stable timing"
+            "Astable and monostable operation",
+            "Timing from microseconds to hours",
+            "High output current"
         ],
         "applications": [
-            "Timers",
+            "Timer circuits",
             "Pulse generation",
             "Oscillators"
         ],
         "datasheet": "https://www.ti.com/lit/ds/symlink/ne555.pdf"
+    },
+    "LM741": {
+        "name": "LM741 Operational Amplifier",
+        "function": "Op-Amp",
+        "pins": 8,
+        "features": [
+            "General purpose op-amp",
+            "Short circuit protection",
+            "Wide supply voltage range"
+        ],
+        "applications": [
+            "Voltage comparators",
+            "Summing amplifiers",
+            "Integrators"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm741.pdf"
+    },
+    "LM324": {
+        "name": "LM324 Quad Operational Amplifier",
+        "function": "Op-Amp",
+        "pins": 14,
+        "features": [
+            "Quad independent op-amps",
+            "Low power consumption",
+            "Wide power supply range"
+        ],
+        "applications": [
+            "Transducer amplifiers",
+            "DC gain blocks",
+            "Signal conditioning"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm324.pdf"
+    },
+    "TL072": {
+        "name": "TL072 Low-Noise JFET Op-Amp",
+        "function": "Op-Amp",
+        "pins": 8,
+        "features": [
+            "Low noise JFET input",
+            "High slew rate",
+            "Low distortion"
+        ],
+        "applications": [
+            "Audio preamplifiers",
+            "Active filters",
+            "Instrumentation amplifiers"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/tl072.pdf"
+    },
+    "LM386": {
+        "name": "LM386 Low Voltage Audio Power Amplifier",
+        "function": "Audio Amplifier",
+        "pins": 8,
+        "features": [
+            "Battery operation",
+            "Low distortion",
+            "Adjustable voltage gain"
+        ],
+        "applications": [
+            "Portable audio devices",
+            "AM-FM radio amplifiers",
+            "Intercom systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm386.pdf"
+    },
+    "7805": {
+        "name": "LM7805 Voltage Regulator",
+        "function": "Voltage Regulator",
+        "pins": 3,
+        "features": [
+            "5V fixed output",
+            "1A output current",
+            "Thermal overload protection"
+        ],
+        "applications": [
+            "Power supplies",
+            "Voltage regulation",
+            "Microcontroller power"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm7805.pdf"
+    },
+    "7812": {
+        "name": "LM7812 Voltage Regulator",
+        "function": "Voltage Regulator",
+        "pins": 3,
+        "features": [
+            "12V fixed output",
+            "1A output current",
+            "Thermal overload protection"
+        ],
+        "applications": [
+            "Power supplies",
+            "Automotive electronics",
+            "Industrial controls"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm7812.pdf"
+    },
+    "LM317": {
+        "name": "LM317 Adjustable Voltage Regulator",
+        "function": "Voltage Regulator",
+        "pins": 3,
+        "features": [
+            "1.2V to 37V adjustable output",
+            "1.5A output current",
+            "Thermal overload protection"
+        ],
+        "applications": [
+            "Adjustable power supplies",
+            "Battery chargers",
+            "Precision current regulators"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm317.pdf"
+    },
+    "LM3914": {
+        "name": "LM3914 LED Driver",
+        "function": "LED Driver",
+        "pins": 18,
+        "features": [
+            "Drives 10 LEDs",
+            "Linear or log display modes",
+            "Programmable reference"
+        ],
+        "applications": [
+            "VU meters",
+            "Battery level indicators",
+            "Audio visualizers"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm3914.pdf"
     },
     "CD4017": {
         "name": "CD4017 Decade Counter",
         "function": "Counter/Divider",
         "pins": 16,
         "features": [
-            "Divide-by-10 counter",
-            "Decoded outputs",
-            "High noise immunity"
+            "Decade counter/divider",
+            "10 decoded outputs",
+            "Medium speed operation"
         ],
         "applications": [
             "LED chasers",
-            "Sequential timers",
+            "Frequency dividers",
+            "Sequential timing"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017.pdf"
+    },
+    "CD4060": {
+        "name": "CD4060 Binary Counter",
+        "function": "Counter/Oscillator",
+        "pins": 16,
+        "features": [
+            "14-stage binary counter",
+            "Built-in oscillator",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Timing circuits",
+            "Clock generation",
             "Frequency division"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4060.pdf"
+    },
+    "CD4047": {
+        "name": "CD4047 Multivibrator",
+        "function": "Oscillator/Multivibrator",
+        "pins": 14,
+        "features": [
+            "Astable or monostable operation",
+            "Low power consumption",
+            "Wide supply voltage range"
+        ],
+        "applications": [
+            "Timing circuits",
+            "Frequency generation",
+            "Pulse generation"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4047.pdf"
+    },
+    "ULN2003": {
+        "name": "ULN2003 Darlington Transistor Array",
+        "function": "Driver",
+        "pins": 16,
+        "features": [
+            "Seven Darlington pairs",
+            "500mA per channel",
+            "Integrated suppression diodes"
+        ],
+        "applications": [
+            "Relay drivers",
+            "Stepper motor drivers",
+            "LED displays"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/uln2003.pdf"
+    },
+    "MAX232": {
+        "name": "MAX232 RS-232 Transceiver",
+        "function": "Interface",
+        "pins": 16,
+        "features": [
+            "RS-232 voltage levels",
+            "Dual drivers/receivers",
+            "On-board charge pump"
+        ],
+        "applications": [
+            "Serial communication",
+            "PC interfaces",
+            "Modem interfaces"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/max232.pdf"
+    },
+    "ATmega328P": {
+        "name": "ATmega328P 8-bit Microcontroller",
+        "function": "Microcontroller",
+        "pins": 28,
+        "features": [
+            "32KB Flash memory",
+            "2KB SRAM",
+            "23 programmable I/O lines"
+        ],
+        "applications": [
+            "Arduino Uno",
+            "Embedded systems",
+            "DIY electronics"
+        ],
+        "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf"
+    },
+    "PIC16F877A": {
+        "name": "PIC16F877A 8-bit Microcontroller",
+        "function": "Microcontroller",
+        "pins": 40,
+        "features": [
+            "14KB Flash memory",
+            "368 bytes RAM",
+            "33 I/O pins"
+        ],
+        "applications": [
+            "Embedded systems",
+            "Industrial control",
+            "Automotive electronics"
+        ],
+        "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/39582b.pdf"
+    },
+    "LM35": {
+        "name": "LM35 Precision Temperature Sensor",
+        "function": "Sensor",
+        "pins": 3,
+        "features": [
+            "10mV/°C scale factor",
+            "±0.5°C accuracy",
+            "Low self-heating"
+        ],
+        "applications": [
+            "Temperature measurement",
+            "Thermostats",
+            "Environmental monitoring"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm35.pdf"
+    },
+    "DS18B20": {
+        "name": "DS18B20 Digital Temperature Sensor",
+        "function": "Sensor",
+        "pins": 3,
+        "features": [
+            "1-Wire interface",
+            "±0.5°C accuracy",
+            "Programmable resolution"
+        ],
+        "applications": [
+            "Digital thermometers",
+            "HVAC systems",
+            "Industrial systems"
+        ],
+        "datasheet": "https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+    },
+    "HC-SR04": {
+        "name": "HC-SR04 Ultrasonic Sensor",
+        "function": "Sensor",
+        "pins": 4,
+        "features": [
+            "2cm-400cm range",
+            "3mm accuracy",
+            "5V operation"
+        ],
+        "applications": [
+            "Distance measurement",
+            "Obstacle detection",
+            "Liquid level measurement"
+        ],
+        "datasheet": "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
+    },
+    "L293D": {
+        "name": "L293D Motor Driver",
+        "function": "Driver",
+        "pins": 16,
+        "features": [
+            "600mA per channel",
+            "Dual H-bridge",
+            "Built-in diodes"
+        ],
+        "applications": [
+            "DC motor control",
+            "Stepper motor control",
+            "Robotics"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/l293d.pdf"
+    },
+    "74HC595": {
+        "name": "74HC595 Shift Register",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "8-bit serial-in, parallel-out",
+            "High-speed operation",
+            "Low power consumption"
+        ],
+        "applications": [
+            "LED matrix control",
+            "GPIO expansion",
+            "Serial to parallel conversion"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+    },
+    "74LS00": {
+        "name": "74LS00 Quad NAND Gate",
+        "function": "Logic",
+        "pins": 14,
+        "features": [
+            "Four independent NAND gates",
+            "TTL compatible",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Digital logic circuits",
+            "Pulse generation",
+            "Signal processing"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls00.pdf"
+    },
+    "74HC14": {
+        "name": "74HC14 Hex Inverter Schmitt Trigger",
+        "function": "Logic",
+        "pins": 14,
+        "features": [
+            "Six independent inverters",
+            "Schmitt trigger inputs",
+            "High noise immunity"
+        ],
+        "applications": [
+            "Waveform shaping",
+            "Oscillators",
+            "Debouncing circuits"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc14.pdf"
+    },
+    "CD4051": {
+        "name": "CD4051 Analog Multiplexer/Demultiplexer",
+        "function": "Analog Switch",
+        "pins": 16,
+        "features": [
+            "8-channel analog switch",
+            "Low ON resistance",
+            "Wide voltage range"
+        ],
+        "applications": [
+            "Signal routing",
+            "Analog to digital conversion",
+            "Audio switching"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4051b.pdf"
+    },
+    "LM567": {
+        "name": "LM567 Tone Decoder",
+        "function": "Decoder",
+        "pins": 8,
+        "features": [
+            "Lock-in detection",
+            "Programmable frequency",
+            "100mA output sink"
+        ],
+        "applications": [
+            "Tone decoding",
+            "Frequency detection",
+            "Communication systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm567.pdf"
     },
     "LM393": {
         "name": "LM393 Dual Comparator",
-        "function": "Voltage Comparator",
+        "function": "Comparator",
         "pins": 8,
         "features": [
-            "Dual independent comparator",
-            "Wide supply range",
-            "Low input bias current"
+            "Dual independent comparators",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Zero-crossing detectors",
-            "Oscillators",
-            "Voltage level detectors"
+            "Voltage comparators",
+            "Zero crossing detectors",
+            "Peak detectors"
         ],
         "datasheet": "https://www.ti.com/lit/ds/symlink/lm393.pdf"
     },
-    "7805": {
-        "name": "7805 Voltage Regulator",
-        "function": "Voltage Regulator",
-        "pins": 3,
-        "features": [
-            "5V fixed output",
-            "Short-circuit protection",
-            "Thermal overload protection"
-        ],
-        "applications": [
-            "Power supply",
-            "Voltage regulation"
-        ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/lm7805.pdf"
-    },
-    "IC006": {
-        "name": "Sample IC 6",
-        "function": "General Purpose IC",
+    "LM339": {
+        "name": "LM339 Quad Comparator",
+        "function": "Comparator",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Quad independent comparators",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Voltage monitoring",
+            "Window comparators",
+            "A/D converters"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm339.pdf"
     },
-    "IC007": {
-        "name": "Sample IC 7",
-        "function": "General Purpose IC",
+    "LM311": {
+        "name": "LM311 Voltage Comparator",
+        "function": "Comparator",
+        "pins": 8,
+        "features": [
+            "Fast response time",
+            "Strobe capability",
+            "50mA output current"
+        ],
+        "applications": [
+            "Precision comparators",
+            "Peak detectors",
+            "Pulse generators"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm311.pdf"
+    },
+    "CD4026": {
+        "name": "CD4026 Decade Counter/Driver",
+        "function": "Counter/Driver",
+        "pins": 16,
+        "features": [
+            "Decade counter with 7-segment decode",
+            "Cascadable",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Digital clocks",
+            "Frequency counters",
+            "Instrumentation displays"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4026b.pdf"
+    },
+    "CD4511": {
+        "name": "CD4511 BCD to 7-Segment Decoder",
+        "function": "Decoder/Driver",
+        "pins": 16,
+        "features": [
+            "BCD to 7-segment conversion",
+            "Latch storage",
+            "High output current"
+        ],
+        "applications": [
+            "Digital displays",
+            "Instrumentation panels",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4511b.pdf"
+    },
+    "CD4001": {
+        "name": "CD4001 Quad NOR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent NOR gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Pulse generation",
+            "Signal processing"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4001b.pdf"
     },
-    "IC008": {
-        "name": "Sample IC 8",
-        "function": "General Purpose IC",
+    "CD4081": {
+        "name": "CD4081 Quad AND Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent AND gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Pulse generation",
+            "Signal processing"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4081b.pdf"
     },
-    "IC009": {
-        "name": "Sample IC 9",
-        "function": "General Purpose IC",
+    "CD4071": {
+        "name": "CD4071 Quad OR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent OR gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Pulse generation",
+            "Signal processing"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4071b.pdf"
     },
-    "IC010": {
-        "name": "Sample IC 10",
-        "function": "General Purpose IC",
+    "CD4069": {
+        "name": "CD4069 Hex Inverter",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Six independent inverters",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Oscillators",
+            "Signal processing"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4069ub.pdf"
     },
-    "IC011": {
-        "name": "Sample IC 11",
-        "function": "General Purpose IC",
+    "CD4013": {
+        "name": "CD4013 Dual D Flip-Flop",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Dual independent flip-flops",
+            "Set/reset capability",
+            "Low power consumption"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Data storage",
+            "Frequency division",
+            "Shift registers"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4013b.pdf"
     },
-    "IC012": {
-        "name": "Sample IC 12",
-        "function": "General Purpose IC",
+    "CD4027": {
+        "name": "CD4027 Dual JK Flip-Flop",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Dual independent flip-flops",
+            "Set/reset capability",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Frequency division",
+            "Shift registers"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4027b.pdf"
+    },
+    "CD4043": {
+        "name": "CD4043 Quad NOR R/S Latch",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Quad independent latches",
+            "3-state outputs",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Bus oriented systems",
+            "Register applications"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4043b.pdf"
+    },
+    "CD4049": {
+        "name": "CD4049 Hex Inverter Buffer",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Six independent buffers",
+            "High sink current",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Logic level shifting",
+            "Signal buffering",
+            "Waveform generation"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4049ub.pdf"
+    },
+    "CD4050": {
+        "name": "CD4050 Hex Buffer",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Six independent buffers",
+            "High sink current",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Logic level shifting",
+            "Signal buffering",
+            "Waveform generation"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4050b.pdf"
+    },
+    "CD4066": {
+        "name": "CD4066 Quad Bilateral Switch",
+        "function": "Analog Switch",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent switches",
+            "Low ON resistance",
+            "Low power consumption"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Analog signal switching",
+            "Modulation/demodulation",
+            "Signal gating"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4066b.pdf"
     },
-    "IC013": {
-        "name": "Sample IC 13",
-        "function": "General Purpose IC",
+    "CD4070": {
+        "name": "CD4070 Quad XOR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent XOR gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Parity generators",
+            "Adders"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4070b.pdf"
     },
-    "IC014": {
-        "name": "Sample IC 14",
-        "function": "General Purpose IC",
+    "CD4073": {
+        "name": "CD4073 Triple 3-Input AND Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Three independent AND gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Signal processing",
+            "Control systems"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4073b.pdf"
     },
-    "IC015": {
-        "name": "Sample IC 15",
-        "function": "General Purpose IC",
+    "CD4075": {
+        "name": "CD4075 Triple 3-Input OR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Three independent OR gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Signal processing",
+            "Control systems"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4075b.pdf"
     },
-    "IC016": {
-        "name": "Sample IC 16",
-        "function": "General Purpose IC",
+    "CD4077": {
+        "name": "CD4077 Quad XOR/XNOR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Parity generators",
+            "Adders"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4077b.pdf"
     },
-    "IC017": {
-        "name": "Sample IC 17",
-        "function": "General Purpose IC",
+    "CD4082": {
+        "name": "CD4082 Dual 4-Input AND Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Two independent AND gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Signal processing",
+            "Control systems"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4082b.pdf"
     },
-    "IC018": {
-        "name": "Sample IC 18",
-        "function": "General Purpose IC",
+    "CD4085": {
+        "name": "CD4085 Dual 2-Input AND/OR-Invert Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Two independent gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Signal processing",
+            "Control systems"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4085b.pdf"
     },
-    "IC019": {
-        "name": "Sample IC 19",
-        "function": "General Purpose IC",
+    "CD4093": {
+        "name": "CD4093 Quad NAND Schmitt Trigger",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent gates",
+            "Schmitt trigger inputs",
+            "Low power consumption"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Waveform generation",
+            "Debouncing circuits",
+            "Oscillators"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4093b.pdf"
     },
-    "IC020": {
-        "name": "Sample IC 20",
-        "function": "General Purpose IC",
+    "CD4094": {
+        "name": "CD4094 8-Stage Shift-and-Store Bus Register",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Serial-in, parallel-out",
+            "3-state outputs",
+            "Low power consumption"
+        ],
+        "applications": [
+            "LED displays",
+            "Serial to parallel conversion",
+            "Bus systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4094b.pdf"
+    },
+    "CD40106": {
+        "name": "CD40106 Hex Schmitt Trigger Inverter",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Six independent inverters",
+            "Schmitt trigger inputs",
+            "Low power consumption"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Waveform generation",
+            "Debouncing circuits",
+            "Oscillators"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40106b.pdf"
     },
-    "IC021": {
-        "name": "Sample IC 21",
-        "function": "General Purpose IC",
+    "CD40107": {
+        "name": "CD40107 Dual NAND Buffer/Driver",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "High sink current",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "LED drivers",
+            "Relay drivers",
+            "Bus drivers"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40107b.pdf"
     },
-    "IC022": {
-        "name": "Sample IC 22",
-        "function": "General Purpose IC",
+    "CD40110": {
+        "name": "CD40110 Decade Up/Down Counter/Latch/Driver",
+        "function": "Counter/Driver",
+        "pins": 16,
+        "features": [
+            "Up/down counting",
+            "7-segment driver",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Digital counters",
+            "Frequency measurement",
+            "Instrumentation"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40110b.pdf"
+    },
+    "CD40147": {
+        "name": "CD40147 10-Line to 4-Line Priority Encoder",
+        "function": "Encoder",
+        "pins": 16,
+        "features": [
+            "Priority encoding",
+            "Low power consumption",
+            "Wide supply voltage range"
+        ],
+        "applications": [
+            "Keyboard encoding",
+            "Address encoding",
+            "Priority interrupt systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40147b.pdf"
+    },
+    "CD40160": {
+        "name": "CD40160 Decade Counter with Asynchronous Clear",
+        "function": "Counter",
+        "pins": 16,
+        "features": [
+            "Synchronous counting",
+            "Asynchronous clear",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Frequency division",
+            "Digital clocks",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40160b.pdf"
+    },
+    "CD40161": {
+        "name": "CD40161 Binary Counter with Asynchronous Clear",
+        "function": "Counter",
+        "pins": 16,
+        "features": [
+            "Synchronous counting",
+            "Asynchronous clear",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Frequency division",
+            "Digital clocks",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40161b.pdf"
+    },
+    "CD40174": {
+        "name": "CD40174 Hex D Flip-Flop",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Six independent flip-flops",
+            "Common clock and clear",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Shift registers",
+            "Bus systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40174b.pdf"
+    },
+    "CD40175": {
+        "name": "CD40175 Quad D Flip-Flop",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Four independent flip-flops",
+            "Common clock and clear",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Shift registers",
+            "Bus systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40175b.pdf"
+    },
+    "CD40192": {
+        "name": "CD40192 Synchronous Up/Down Decade Counter",
+        "function": "Counter",
+        "pins": 16,
+        "features": [
+            "Up/down counting",
+            "Synchronous operation",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Frequency division",
+            "Digital clocks",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40192b.pdf"
+    },
+    "CD40193": {
+        "name": "CD40193 Synchronous Up/Down Binary Counter",
+        "function": "Counter",
+        "pins": 16,
+        "features": [
+            "Up/down counting",
+            "Synchronous operation",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Frequency division",
+            "Digital clocks",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40193b.pdf"
+    },
+    "CD40194": {
+        "name": "CD40194 4-Bit Bidirectional Universal Shift Register",
+        "function": "Shift Register",
+        "pins": 16,
+        "features": [
+            "Parallel/serial operation",
+            "Bidirectional shifting",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Serial-parallel conversion",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40194b.pdf"
+    },
+    "CD40208": {
+        "name": "CD40208 4x4 Register File",
+        "function": "Memory",
+        "pins": 16,
+        "features": [
+            "16-bit storage",
+            "Random access",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Register files",
+            "Small memory systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40208b.pdf"
+    },
+    "CD40257": {
+        "name": "CD40257 Quad 2-Line to 1-Line Data Selector/Multiplexer",
+        "function": "Multiplexer",
+        "pins": 16,
+        "features": [
+            "Four 2-input multiplexers",
+            "Common select input",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data routing",
+            "Signal selection",
+            "Bus systems"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd40257b.pdf"
+    },
+    "CD4028": {
+        "name": "CD4028 BCD to Decimal Decoder",
+        "function": "Decoder",
+        "pins": 16,
+        "features": [
+            "BCD to decimal conversion",
+            "Low power consumption",
+            "Wide supply voltage range"
+        ],
+        "applications": [
+            "Display drivers",
+            "Code conversion",
+            "Address decoding"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4028b.pdf"
+    },
+    "CD4030": {
+        "name": "CD4030 Quad XOR Gate",
+        "function": "Logic",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four independent XOR gates",
+            "Low power consumption",
+            "Wide supply voltage range"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Digital logic circuits",
+            "Parity generators",
+            "Adders"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4030b.pdf"
     },
-    "IC023": {
-        "name": "Sample IC 23",
-        "function": "General Purpose IC",
+    "CD4034": {
+        "name": "CD4034 8-Stage Bidirectional Parallel/Serial In/Parallel Out Register",
+        "function": "Shift Register",
+        "pins": 24,
+        "features": [
+            "Bidirectional operation",
+            "Parallel/serial input",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Serial-parallel conversion",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4034b.pdf"
+    },
+    "CD4035": {
+        "name": "CD4035 4-Stage Parallel In/Parallel Out Shift Register",
+        "function": "Shift Register",
+        "pins": 16,
+        "features": [
+            "Parallel input/output",
+            "JK or serial input",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Serial-parallel conversion",
+            "Counters"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4035b.pdf"
+    },
+    "CD4042": {
+        "name": "CD4042 Quad Clocked D Latch",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Four independent latches",
+            "Common clock",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Bus systems",
+            "Register applications"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4042b.pdf"
+    },
+    "CD4044": {
+        "name": "CD4044 Quad NOR R/S Latch",
+        "function": "Logic",
+        "pins": 16,
+        "features": [
+            "Quad independent latches",
+            "3-state outputs",
+            "Low power consumption"
+        ],
+        "applications": [
+            "Data storage",
+            "Bus oriented systems",
+            "Register applications"
+        ],
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4044b.pdf"
+    },
+    "IC74266": {
+        "name": "IC 74266 Quad 2-Input XNOR Gate",
+        "function": "XNOR Gate",
         "pins": 14,
         "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
+            "Four XNOR gates",
+            "TTL compatible",
+            "Balanced propagation delay"
         ],
         "applications": [
-            "Application A",
-            "Application B"
+            "Equality detectors",
+            "Comparator circuits"
         ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC024": {
-        "name": "Sample IC 24",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC025": {
-        "name": "Sample IC 25",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC026": {
-        "name": "Sample IC 26",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC027": {
-        "name": "Sample IC 27",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC028": {
-        "name": "Sample IC 28",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC029": {
-        "name": "Sample IC 29",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC030": {
-        "name": "Sample IC 30",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC031": {
-        "name": "Sample IC 31",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC032": {
-        "name": "Sample IC 32",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC033": {
-        "name": "Sample IC 33",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC034": {
-        "name": "Sample IC 34",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC035": {
-        "name": "Sample IC 35",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC036": {
-        "name": "Sample IC 36",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC037": {
-        "name": "Sample IC 37",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC038": {
-        "name": "Sample IC 38",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC039": {
-        "name": "Sample IC 39",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC040": {
-        "name": "Sample IC 40",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC041": {
-        "name": "Sample IC 41",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC042": {
-        "name": "Sample IC 42",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC043": {
-        "name": "Sample IC 43",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC044": {
-        "name": "Sample IC 44",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC045": {
-        "name": "Sample IC 45",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC046": {
-        "name": "Sample IC 46",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC047": {
-        "name": "Sample IC 47",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC048": {
-        "name": "Sample IC 48",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC049": {
-        "name": "Sample IC 49",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
-    },
-    "IC050": {
-        "name": "Sample IC 50",
-        "function": "General Purpose IC",
-        "pins": 14,
-        "features": [
-            "Feature A",
-            "Feature B",
-            "Feature C"
-        ],
-        "applications": [
-            "Application A",
-            "Application B"
-        ],
-        "datasheet": "https://example.com/datasheet.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls266.pdf"
     }
 }
