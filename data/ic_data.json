@@ -1,17 +1,16 @@
 {
     "LM358": {
-        "name": "LM358 Dual Operational Amplifier",
-        "function": "Op-Amp",
+        "name": "LM358 Dual Op-Amp",
+        "function": "Operational Amplifier",
         "pins": 8,
         "features": [
-            "Dual independent op-amps",
             "Low power consumption",
-            "Wide power supply range"
+            "Wide voltage range",
+            "Dual amplifier"
         ],
         "applications": [
-            "Sensor signal amplification",
-            "Active filters",
-            "Voltage followers"
+            "Audio processing",
+            "Sensor signal conditioning"
         ],
         "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
     },
@@ -20,12 +19,12 @@
         "function": "Timer/Multivibrator",
         "pins": 8,
         "features": [
-            "Astable and monostable operation",
-            "Timing from microseconds to hours",
-            "High output current"
+            "Astable and monostable modes",
+            "Adjustable duty cycle",
+            "Stable timing"
         ],
         "applications": [
-            "Timer circuits",
+            "Timers",
             "Pulse generation",
             "Oscillators"
         ],
@@ -37,122 +36,720 @@
         "pins": 16,
         "features": [
             "Divide-by-10 counter",
-            "10 decoded outputs",
-            "Wide supply voltage range"
-        ],
-        "applications": [
-            "LED chasers",
-            "Frequency counters",
-            "Digital clocks"
-        ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf"
-    },
-    "IC7400": {
-        "name": "IC 7400 Quad 2-Input NAND Gate",
-        "function": "NAND Gate",
-        "pins": 14,
-        "features": [
-            "Four NAND gates",
-            "TTL compatible",
-            "Fast switching"
-        ],
-        "applications": [
-            "Logic building blocks",
-            "Digital systems",
-            "Combinational logic"
-        ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls00.pdf"
-    },
-    "IC7402": {
-        "name": "IC 7402 Quad 2-Input NOR Gate",
-        "function": "NOR Gate",
-        "pins": 14,
-        "features": [
-            "Four NOR gates",
-            "TTL compatible",
+            "Decoded outputs",
             "High noise immunity"
         ],
         "applications": [
-            "Logic operations",
-            "Digital circuits"
+            "LED chasers",
+            "Sequential timers",
+            "Frequency division"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls02.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf"
     },
-    "IC7404": {
-        "name": "IC 7404 Hex Inverter",
-        "function": "NOT Gate",
-        "pins": 14,
+    "LM393": {
+        "name": "LM393 Dual Comparator",
+        "function": "Voltage Comparator",
+        "pins": 8,
         "features": [
-            "Six independent inverters",
-            "TTL compatible",
-            "High speed"
+            "Dual independent comparator",
+            "Wide supply range",
+            "Low input bias current"
         ],
         "applications": [
-            "Signal inversion",
-            "Digital logic",
-            "Pulse shaping"
+            "Zero-crossing detectors",
+            "Oscillators",
+            "Voltage level detectors"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls04.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm393.pdf"
     },
-    "IC7408": {
-        "name": "IC 7408 Quad 2-Input AND Gate",
-        "function": "AND Gate",
-        "pins": 14,
+    "7805": {
+        "name": "7805 Voltage Regulator",
+        "function": "Voltage Regulator",
+        "pins": 3,
         "features": [
-            "Four AND gates",
-            "TTL compatible",
-            "High fan-out"
+            "5V fixed output",
+            "Short-circuit protection",
+            "Thermal overload protection"
         ],
         "applications": [
-            "Logic design",
-            "Arithmetic circuits"
+            "Power supply",
+            "Voltage regulation"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls08.pdf"
+        "datasheet": "https://www.ti.com/lit/ds/symlink/lm7805.pdf"
     },
-    "IC7432": {
-        "name": "IC 7432 Quad 2-Input OR Gate",
-        "function": "OR Gate",
+    "IC006": {
+        "name": "Sample IC 6",
+        "function": "General Purpose IC",
         "pins": 14,
         "features": [
-            "Four OR gates",
-            "TTL compatible",
-            "Fast switching"
+            "Feature A",
+            "Feature B",
+            "Feature C"
         ],
         "applications": [
-            "Digital logic",
-            "Control logic"
+            "Application A",
+            "Application B"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls32.pdf"
+        "datasheet": "https://example.com/datasheet.pdf"
     },
-    "IC7486": {
-        "name": "IC 7486 Quad 2-Input XOR Gate",
-        "function": "XOR Gate",
+    "IC007": {
+        "name": "Sample IC 7",
+        "function": "General Purpose IC",
         "pins": 14,
         "features": [
-            "Four XOR gates",
-            "TTL logic",
-            "Medium speed"
+            "Feature A",
+            "Feature B",
+            "Feature C"
         ],
         "applications": [
-            "Parity checkers",
-            "Adders",
-            "Data comparison"
+            "Application A",
+            "Application B"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls86.pdf"
+        "datasheet": "https://example.com/datasheet.pdf"
     },
-    "IC74266": {
-        "name": "IC 74266 Quad 2-Input XNOR Gate",
-        "function": "XNOR Gate",
+    "IC008": {
+        "name": "Sample IC 8",
+        "function": "General Purpose IC",
         "pins": 14,
         "features": [
-            "Four XNOR gates",
-            "TTL compatible",
-            "Balanced propagation delay"
+            "Feature A",
+            "Feature B",
+            "Feature C"
         ],
         "applications": [
-            "Equality detectors",
-            "Comparator circuits"
+            "Application A",
+            "Application B"
         ],
-        "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ls266.pdf"
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC009": {
+        "name": "Sample IC 9",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC010": {
+        "name": "Sample IC 10",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC011": {
+        "name": "Sample IC 11",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC012": {
+        "name": "Sample IC 12",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC013": {
+        "name": "Sample IC 13",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC014": {
+        "name": "Sample IC 14",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC015": {
+        "name": "Sample IC 15",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC016": {
+        "name": "Sample IC 16",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC017": {
+        "name": "Sample IC 17",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC018": {
+        "name": "Sample IC 18",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC019": {
+        "name": "Sample IC 19",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC020": {
+        "name": "Sample IC 20",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC021": {
+        "name": "Sample IC 21",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC022": {
+        "name": "Sample IC 22",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC023": {
+        "name": "Sample IC 23",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC024": {
+        "name": "Sample IC 24",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC025": {
+        "name": "Sample IC 25",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC026": {
+        "name": "Sample IC 26",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC027": {
+        "name": "Sample IC 27",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC028": {
+        "name": "Sample IC 28",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC029": {
+        "name": "Sample IC 29",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC030": {
+        "name": "Sample IC 30",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC031": {
+        "name": "Sample IC 31",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC032": {
+        "name": "Sample IC 32",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC033": {
+        "name": "Sample IC 33",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC034": {
+        "name": "Sample IC 34",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC035": {
+        "name": "Sample IC 35",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC036": {
+        "name": "Sample IC 36",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC037": {
+        "name": "Sample IC 37",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC038": {
+        "name": "Sample IC 38",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC039": {
+        "name": "Sample IC 39",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC040": {
+        "name": "Sample IC 40",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC041": {
+        "name": "Sample IC 41",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC042": {
+        "name": "Sample IC 42",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC043": {
+        "name": "Sample IC 43",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC044": {
+        "name": "Sample IC 44",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC045": {
+        "name": "Sample IC 45",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC046": {
+        "name": "Sample IC 46",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC047": {
+        "name": "Sample IC 47",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC048": {
+        "name": "Sample IC 48",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC049": {
+        "name": "Sample IC 49",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
+    },
+    "IC050": {
+        "name": "Sample IC 50",
+        "function": "General Purpose IC",
+        "pins": 14,
+        "features": [
+            "Feature A",
+            "Feature B",
+            "Feature C"
+        ],
+        "applications": [
+            "Application A",
+            "Application B"
+        ],
+        "datasheet": "https://example.com/datasheet.pdf"
     }
 }
